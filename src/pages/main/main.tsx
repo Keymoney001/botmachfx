@@ -106,7 +106,11 @@ const AppWrapper = observer(() => {
         is_chart_modal_visible,
         is_trading_view_modal_visible,
         setActiveTab,
+        setWebSocketState,
+        setActiveTour,
+        setTourDialogVisibility,
     } = dashboard;
+    
     const { onEntered } = load_modal;
     const { is_dialog_open, dialog_options, onCancelButtonClick, onCloseDialog, onOkButtonClick, stopBot, is_drawer_open } = run_panel;
     const { cancel_button_text, ok_button_text, title, message } = dialog_options as { [key: string]: string };
